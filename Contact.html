@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* How to create responsive form with CSS */
+/* style input, select elements and textareas */
+     input[type=text],select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     /* style to display next to the inputs */
+     label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     /* style the container */
+     .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     /* style the submit button */
+     input[type=submit] {
+      background-color: #04aa6d;
+      color: white;
+      padding: 12px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     /* floating column for labels:25% width */
+     .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     /* clear float after the columns */
+     .row::after {
+      content: "";
+      display: table;
+      clear: both;
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+    /* Responsive layout - when the screen is less than 600px wide,make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100px;
+        margin-top: 0;
+      }
+    }
+    p {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h2 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h3 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h4 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h5 {
+      font-size: 80px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .header {
+      font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container {
+    font-style: normal;
+    font-weight: 700;
+    }
+    .placeholder {
+      border: #73ad21;
+      border: 100vh;
+    }
+    /* image holding the image and the text */
+    .image {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+   
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="image">
+      <img src="file:///C:/Users/USER/Desktop/rootfolder/xyz.jpeg" alt="Wilson Muita" style="width:100%">
+    </div>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title style="font-size: 80px; font-family: Verdana, Geneva, Tahoma, sans-serif;">My portfolio</title>
+</head>
+<body>
+  <div class="w3-container">
+    <div class="w3-border">
+      <div class="w3-grey" style="height: 24px; width: 20%;"></div>
+    </div>
+  </div>
+  <header class="header">
+    <a href="index.html">Personal Portfolia Website</a>
+    <nav>
+        <ul>
+            <li style="font-weight:bold;"><a href="portfolio.html">Portfolio</a></li>
+            <li style="font-weight:bold"><a href="about me.html">About me</a></li>
+            <li style="font-weight:bold;"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <h1>Hi, I Am Wilson</h1>
+</div>
+<div><p>I am freelance designer, specializing in web development. Checkout my work below and and feel to get in touch if you want to work with me. </p>
+</div>
+<h2>wilsonmuita41@gmail.com</h2>
+<br/>
+<h3>wanjirumuita1@gmail.com</h3>
+<br/>
+<h3>+254703538670</h3>
+<br/>
+<h4>+254784351826</h4>
+</br>
+</br>
+
+  <h5>Contact Us</h5>
+  <div class="container">
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="counrty" name="country">
+            <option value="australia">Australia</option>
+            <option value="USA">USA</option>
+            <option value="africa">Africa</option>
+            <option value="europe">Europe</option>
+            <option value="northamerica">North America</option>
+            <option value="South America">South America</option>
+            <option value="australia">Australia</option>
+            <option value="america">America</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write Something.." style="height: 200px;"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
